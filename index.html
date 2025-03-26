@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pedido Pra Cecilia</title>
+    
+</head>
+ <body>
+    <div class="box">
+        <p>Volta cmg vida<3</p>
+        <div class="buttons-container">
+            <button onclick="sim()">Sim</a></button>
+            <button onclick-"desvia(this)" onmouseover="desvia(this)">Não</button> 
+      
+    </div>  
+
+
+<footer>
+    <a href="segundapagina.html">clique aqui!</a>
+        
+    </a>
+</footer>
+
+</body>
+
+</style>
+    <script>
+        
+        function sim(){
+            alert("saudades de você, Cecilia");
+        }
+       
+        function desvia(t){
+            var btn = document.querySelector ("body > div > div > button:nth-child(2)");
+            console.log(btn);
+            btn.style.position = "absolute";
+            btn.style.bottom = geraPosicao(10, 90); 
+            btn.style.left = geraPosicao(10, 90);
+
+            console.log("não vai funcionar, bb rs");
+        }
+
+
+
+
+        randomNumber(0, 100);
+
+        function geraPosicao(min, max) {
+  return (Math.random() * (max - min) + min) + "%";
+}    
+
+    </script>
+        
+    
+
+</html>
